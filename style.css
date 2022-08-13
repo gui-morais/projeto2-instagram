@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+
+ion-icon {
+    cursor: pointer;
+}
+
+.barra-topo {
+    height: 54px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #dbdbdb;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+}
+
+.barra-topo-conteudo {
+    width: 935px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.barra-topo-conteudo ion-icon {
+    font-size: 22px;
+    color: black;
+}
+
+.logos div {
+    width: 1px;
+    height: 22px;
+    background-color: #dbdbdb;
+}
+
+.barra-topo-conteudo input[type=text] {
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.barra-topo-mobile {
+    display: none;
+}
+
+.conteudo-pagina {
+    width: 935px;
+    margin: 88px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa-esquerda {
+    width: 614px;
+}
+
+.caixa-stories {
+    width: 614px;
+    height: 118px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 5px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.caixa-stories ion-icon {
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px lightgray;
+}
+
+.stories {
+    font-size: 12px;
+    color: black;
+    width: 80px;
+    text-align: center;
+}
+
+.stories div:first-child {
+    width: 66px;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.stories div img:first-child {
+    width: 56px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.stories div img:nth-child(2) {
+    width: 66px;
+}
+
+.stories div:nth-child(2) {
+    width: 80px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.caixa-post {
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.caixa-post-top {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.caixa-post-top div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.caixa-post-top img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.caixa-post-top ion-icon {
+    font-size: 16px;
+}
+
+.imagem-post {
+    width: 100%;
+}
+
+.caixa-post-bottom {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.caixa-post-bottom strong {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caixa-post-logos {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.caixa-post-logos ion-icon {
+    font-size: 22px;
+}
+
+.caixa-post-logos div:first-child {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa-post-curtidas {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+
+.caixa-post-curtidas img {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.caixa-post-descricao {
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+
+.caixa-post-comentarios > div:first-child{
+    color: #8e8e8e;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.comentarios {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+
+.tempo {
+    font-size: 11px;
+    color: #8e8e8e;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+}
+
+.borda {
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.publicar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 0px 15px;
+}
+
+.publicar div{
+    margin-left: 5px;
+    font-weight: 500;
+    color: #B2DFFC;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+.publicar div:hover {
+    color: #0095F6
+}
+
+.publicar ion-icon {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.publicar input[type=text] {
+    width: 90%;
+    height: 28px;
+    background-color: white;
+    border: none;
+}
+
+.sidebar {
+    width: 293px;
+    position: fixed;
+    margin-left: 640px;
+}
+
+.sidebar-top {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.sidebar-top h1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.sidebar-top h2 {
+    font-size: 14px;
+    color: #8e8e8e
+}
+
+.sidebar-top div{
+    margin-left: 15px;
+}
+
+.sidebar-sugestoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 17px;
+}
+
+.sidebar-sugestoes div:first-child {
+    color: #8e8e8e;
+}
+
+.sidebar-sugestoes div:nth-child(2) {
+    cursor: pointer;
+}
+
+.sidebar-perfil {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar-perfil div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-perfil img {
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.segue-voce {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.seguir {
+    font-size: 12px;
+    font-weight: 500;
+    color: #139EF2;
+    cursor: pointer;
+}
+
+.infos {
+    font-size: 11px;
+    color: #c7c7c7;
+    margin-top: 25px;
+}
+
+.barra-bottom {
+    display: none;
+}

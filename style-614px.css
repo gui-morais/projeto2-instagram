@@ -1,0 +1,61 @@
+@media (max-width: 614px) {
+    .barra-topo-conteudo {
+        display: none;
+    }
+
+    .barra-topo-mobile {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    .barra-topo-mobile ion-icon {
+        font-size: 22px;
+    }
+
+    .conteudo-pagina {
+        margin: 52px 0px;
+    }
+
+    .caixa-esquerda {
+        width: 100%;
+    }
+
+    .caixa-stories {
+        width: 100%;
+        background-color: #fafafa;
+        border: none;
+        margin-bottom: 0px;
+    }
+
+    .caixa-stories ion-icon {
+        display: none;
+    }
+
+    .caixa-post {
+        width: 100%;
+    }
+
+    .barra-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 54px;
+        background-color: white;
+        border: 1px solid #dbdbdb;
+        padding: 0px 20px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        z-index: 3;
+    }
+
+    .barra-bottom ion-icon {
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
